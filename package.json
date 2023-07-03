@@ -1,15 +1,26 @@
 {
-  "name": "dist",
+  "name": "kakhovka-dam-breach",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "devDependencies": {
+    "vite": "4.3.9"
+  },
   "scripts": {
     "build": "vite build --outDir docs"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kosich/kakhovka-dam-breach.git"
+  },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "vite": "^4.3.9"
-  }
+  "author": "Kos Palchyk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kosich/kakhovka-dam-breach/issues"
+  },
+  "homepage": "https://github.com/kosich/kakhovka-dam-breach#readme"
 }
