@@ -10,7 +10,7 @@
     "vite": "4.3.9"
   },
   "scripts": {
-    "build": "vite build && cp __CNAME ./dist/CNAME"
+    "build": "vite build && cp __CNAME ./dist/CNAME && cp .nojekyll ./dist/"
   },
   "repository": {
     "type": "git",
