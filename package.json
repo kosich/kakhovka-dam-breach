@@ -10,7 +10,9 @@
     "vite": "4.3.9"
   },
   "scripts": {
-    "build": "vite build && cp __CNAME ./dist/CNAME && cp .nojekyll ./dist/"
+    "fix_urls": "node ./scripts/fix_google_urls.js",
+    "build": "npm run fix_urls && vite build && npm run ghpages_chore",
+    "ghpages_chore": "cp __CNAME ./dist/CNAME && cp .nojekyll ./dist/"
   },
   "repository": {
     "type": "git",
