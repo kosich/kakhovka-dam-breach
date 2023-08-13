@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  @apply text-gray-900 bg-gray-50;
+  @apply dark:text-gray-50 dark:bg-gray-900;
+}
+
+h1 {
+  @apply text-4xl mt-4 mb-2;
+}
+
+h2 {
+  @apply text-2xl mt-4 mb-2;
+}
+
+h3 {
+  @apply text-xl mt-3 mb-2;
+}
+
+h4 {
+  @apply text-xl mt-2 mb-1;
+}
+
+h5 {
+  @apply text-xl my-1;
+}
+
+h5 {
+  @apply font-bold my-1;
+}
+
+a {
+  @apply underline text-sky-500 hover:text-sky-700 break-words;
+}
+
+p {
+  @apply my-2;
+}

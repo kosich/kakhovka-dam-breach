@@ -12,7 +12,11 @@
   "scripts": {
     "fix_urls": "node ./scripts/fix_google_urls.js",
     "build": "npm run fix_urls && vite build && npm run ghpages_chore",
-    "ghpages_chore": "cp __CNAME ./dist/CNAME && cp .nojekyll ./dist/"
+    "ghpages_chore": "cp __CNAME ./dist/CNAME && cp .nojekyll ./dist/",
+    "next-dev": "next dev",
+    "next-build": "next build",
+    "next-start": "next start",
+    "next-lint": "next lint"
   },
   "repository": {
     "type": "git",
@@ -24,5 +28,22 @@
   "bugs": {
     "url": "https://github.com/kosich/kakhovka-dam-breach/issues"
   },
-  "homepage": "https://github.com/kosich/kakhovka-dam-breach#readme"
+  "homepage": "https://github.com/kosich/kakhovka-dam-breach#readme",
+  "dependencies": {
+    "@mdx-js/loader": "^2.3.0",
+    "@mdx-js/react": "^2.3.0",
+    "@next/mdx": "^13.4.13",
+    "@types/node": "20.4.10",
+    "@types/react": "18.2.20",
+    "@types/react-dom": "18.2.7",
+    "autoprefixer": "10.4.14",
+    "eslint": "8.47.0",
+    "eslint-config-next": "13.4.13",
+    "next": "^13.4.13",
+    "postcss": "8.4.27",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "3.3.3",
+    "typescript": "5.1.6"
+  }
 }
