@@ -22,33 +22,78 @@ body {
 }
 
 h1 {
-  @apply text-4xl mt-4 mb-2;
+  @apply text-4xl text-gray-700 text-left;
+  @apply mt-8 mb-2;
 }
 
 h2 {
-  @apply text-2xl mt-4 mb-2;
+  @apply text-3xl text-gray-600 text-left;
+  @apply mt-6 mb-2;
 }
 
 h3 {
-  @apply text-xl mt-3 mb-2;
+  @apply text-2xl text-left;
+  @apply mt-4 mb-2;
 }
 
 h4 {
-  @apply text-xl mt-2 mb-1;
+  @apply text-xl text-left;
+  @apply mt-4 mb-2;
 }
 
 h5 {
-  @apply text-xl my-1;
+  @apply text-lg text-left;
+  @apply mt-4 mb-2;
 }
 
 h5 {
-  @apply font-bold my-1;
+  @apply font-bold text-left;
+  @apply mt-4 mb-2;
 }
 
 a {
-  @apply underline text-sky-500 hover:text-sky-700 break-words;
+  @apply underline hover:text-sky-500 break-words;
 }
 
 p {
-  @apply my-2;
+  @apply my-3;
+}
+
+small {
+  @apply text-sm text-left;
+}
+
+blockquote {
+  @apply my-2 pl-4 py-0.5 border-l-4 border-gray-300 italic text-gray-700;
+}
+
+blockquote > p:first-child {
+  @apply mt-1;
+}
+
+blockquote > p:last-child {
+  @apply mb-1;
+}
+
+ul, ol {
+  @apply text-left my-2 pl-8;
+}
+
+ol {
+  @apply list-decimal;
+}
+
+ul {
+  @apply list-disc;
+}
+
+ol > li > ol,
+ul > li > ul,
+ul > li > ol,
+ol > li > ul {
+  @apply pl-8;
+}
+
+figure {
+  @apply flex flex-col gap-2;
 }
