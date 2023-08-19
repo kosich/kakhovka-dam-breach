@@ -22,13 +22,13 @@ body {
 }
 
 h1 {
-  @apply text-4xl text-gray-700 text-left;
-  @apply mt-8 mb-2;
+  @apply text-4xl text-left text-gray-700 mt-8 mb-2;
+  @apply dark:text-gray-300;
 }
 
 h2 {
-  @apply text-3xl text-gray-600 text-left;
-  @apply mt-6 mb-2;
+  @apply text-3xl text-left text-gray-600 mt-6 mb-2;
+  @apply dark:text-gray-300;
 }
 
 h3 {
@@ -36,7 +36,7 @@ h3 {
   @apply mt-4 mb-2;
 }
 
-h4 {
+4 {
   @apply text-xl text-left;
   @apply mt-4 mb-2;
 }
@@ -65,6 +65,7 @@ small {
 
 blockquote {
   @apply my-2 pl-4 py-0.5 border-l-4 border-gray-300 italic text-gray-700;
+  @apply dark:border-gray-700 dark:text-gray-300;
 }
 
 blockquote > p:first-child {
