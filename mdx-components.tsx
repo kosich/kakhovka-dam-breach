@@ -1,5 +1,6 @@
 import type { MDXComponents } from 'mdx/types';
 import { H } from './src/app/shared/H';
+import { Link } from '@/app/shared/Link';
  
 // This file allows you to provide custom React components
 // to be used in MDX files. You can import and use any
@@ -10,6 +11,7 @@ import { H } from './src/app/shared/H';
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
     // Allows customizing built-in components, e.g. to add styling.
+    a: Link,
     h1: H(1),
     h2: H(2),
     h3: H(3),
