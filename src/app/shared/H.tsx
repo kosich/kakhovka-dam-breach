@@ -15,9 +15,7 @@ export function H(n: number) {
       <span>
         <a
           href={"#" + id}
-          className={`inline-block float-left no-underline -ml-7 text-gray-300 dark:text-gray-700 ${
-            n == 1 ? "hidden" : ""
-          }`}
+          className="inline-block float-left no-underline -ml-7 text-gray-300 dark:text-gray-700"
         >
           #
         </a>
