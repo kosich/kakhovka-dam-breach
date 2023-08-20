@@ -12,8 +12,8 @@
     "vite": "4.3.9"
   },
   "scripts": {
-    "fix_urls": "node ./scripts/fix_google_urls.js",
-    "build": "npm run fix_urls && vite build && npm run ghpages_chore",
+    "extract_contents": "node ./scripts/extract_contents.js",
+    "build": "npm run extract_contents && npm run next-build && npm run ghpages_chore",
     "ghpages_chore": "cp __CNAME ./dist/CNAME && cp .nojekyll ./dist/",
     "next-dev": "next dev",
     "next-build": "next build",
