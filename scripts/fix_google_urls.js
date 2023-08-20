@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 /**
  * @description 
  * google docs export corrupts all URLs to be google-driven

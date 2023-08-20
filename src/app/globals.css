@@ -22,33 +22,33 @@ body {
 }
 
 h1 {
-  @apply text-4xl text-left text-gray-700 mt-8 mb-2;
+  @apply text-4xl text-left text-gray-700 pt-8 pb-2;
   @apply dark:text-gray-300;
 }
 
 h2 {
-  @apply text-3xl text-left text-gray-600 mt-6 mb-2;
+  @apply text-3xl text-left text-gray-600 pt-6 pb-2;
   @apply dark:text-gray-300;
 }
 
 h3 {
   @apply text-2xl text-left;
-  @apply mt-4 mb-2;
+  @apply pt-6 pb-2;
 }
 
 h4 {
   @apply text-xl text-left;
-  @apply mt-4 mb-2;
+  @apply pt-6 pb-2;
 }
 
 h5 {
   @apply text-lg text-left;
-  @apply mt-4 mb-2;
+  @apply pt-4 pb-2;
 }
 
-h5 {
+h6 {
   @apply font-bold text-left;
-  @apply mt-4 mb-2;
+  @apply pt-4 pb-2;
 }
 
 a {
@@ -56,7 +56,7 @@ a {
 }
 
 p {
-  @apply my-3;
+  @apply py-3;
 }
 
 small {
@@ -64,16 +64,21 @@ small {
 }
 
 blockquote {
-  @apply my-2 pl-4 py-0.5 border-l-4 border-gray-300 italic text-gray-700;
+  @apply my-2 py-2 pl-4 border-l-4 border-gray-300 italic text-gray-700;
   @apply dark:border-gray-700 dark:text-gray-300;
+  @apply font-serif;
+}
+
+blockquote small {
+  @apply font-sans;
 }
 
 blockquote > p:first-child {
-  @apply mt-1;
+  @apply pt-0;
 }
 
-blockquote > p:last-child {
-  @apply mb-1;
+blockquote > *:last-child {
+  @apply pb-0;
 }
 
 ul, ol {
@@ -97,4 +102,32 @@ ol > li > ul {
 
 figure {
   @apply flex flex-col gap-2;
+}
+
+._contents {
+  @apply text-gray-400 dark:text-slate-600;
+}
+
+._contents ul {
+  @apply list-none my-2 mb-4 pl-0;
+}
+
+._contents ul ul {
+  @apply pl-4
+}
+
+._contents li {
+  @apply py-1;
+}
+
+._contents a {
+  @apply no-underline block leading-tight;
+}
+
+._subtle > p:first-child {
+  @apply pt-0;
+}
+
+._subtle > p:last-child {
+  @apply pb-0;
 }

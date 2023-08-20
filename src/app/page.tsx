@@ -1,26 +1,20 @@
 import Article from './article.mdx';
+import Contents from './contents.mdx';
 
 export default function Home() {
   return (
-    <section className="min-h-screen px-4 py-24 flex justify-center">
-      <div className="flex gap-8">
-        <aside>
-          <ul>
-            <li>
-              <a href="#">Preface</a>
-            </li>
-            <li>
-              <a href="#">Summary</a>
-            </li>
-            <li>
-              <a href="#">What is scouring</a>
-            </li>
-          </ul>
-        </aside>
-        <main className="text-justify max-w-2xl flex-grow">
+    <section className="min-h-screen flex justify-center gap-8">
+      <main className="text-justify flex-grow py-24">
+        <div className="max-w-2xl float-right pl-4">
           <Article />
-        </main>
-      </div>
+        </div>
+      </main>
+      <aside className="_contents sticky flex-grow top-0 h-screen overflow-auto py-24">
+        <div className="w-64 right-0 bottom-0">
+          <h2 className="text-lg">Table of contents:</h2>
+          <Contents />
+        </div>
+      </aside>
     </section>
   );
 }

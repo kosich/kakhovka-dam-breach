@@ -12,15 +12,15 @@ export function H(n: number) {
     return createElement(
       "h" + n,
       { id, ...p },
-      <span>
-        <a
-          href={"#" + id}
-          className="inline-block float-left no-underline -ml-7 text-gray-300 dark:text-gray-700"
-        >
-          #
-        </a>
+      <a href={"#" + id} className="no-underline">
+        {n - 1 ? (
+          <span className="float-left -ml-6 text-gray-300 dark:text-gray-700">
+            &nbsp;#
+          </span>
+        ) : null}
+
         {text}
-      </span>
+      </a>
     );
   };
   return f;
