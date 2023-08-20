@@ -24,25 +24,22 @@ let newContent = file
       return line;
     }
 
-    let { id, level, title, short } = parseTitle(line);
+    let { id, level } = parseTitle(line);
+
+    if (previous?.level >= level) {
+      track = track.slice(0, level - 1);
+    }
+
     let idExists = Boolean(id);
-    if (!idExists) {
-      id = track.join('-') + '-' + nanoid();
-    }
+    id = idExists ? id : (track.join('-') + '-' + nanoid(4));
 
-    if (previous) {
-      if (previous.level >= level) {
-        track.push(id);
-      } else {
-        track = track.slice(level - 1)
-      }
-    }
-
-    console.log('id', id);
+    track.push(id);
     previous = { id, level };
     if (!idExists) {
       return line + '#' + id;
     }
+
+    return line;
   })
   .join('\n')
 
