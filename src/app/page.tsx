@@ -1,5 +1,5 @@
-import Article from './article.mdx';
-import Contents from './contents.mdx';
+import Article from "./article.mdx";
+import Contents from "./contents.mdx";
 
 export default function Home() {
   return (
