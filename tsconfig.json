@@ -35,7 +35,8 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "src/app/shared/extract_url.js",
-    "dist/types/**/*.ts"
+    "dist/types/**/*.ts",
+    "out/types/**/*.ts"
   ],
   "exclude": [
     "node_modules"

@@ -14,7 +14,7 @@
   "scripts": {
     "extract_contents": "node ./scripts/extract_contents.js",
     "build": "npm run extract_contents && npm run next-build && npm run ghpages_chore",
-    "ghpages_chore": "cp __CNAME ./dist/CNAME && cp .nojekyll ./dist/",
+    "ghpages_chore": "cp __CNAME ./out/CNAME && cp .nojekyll ./out/",
     "next-dev": "next dev",
     "next-build": "next build",
     "next-start": "next start",

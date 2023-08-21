@@ -1,3 +1,4 @@
+'client '
 import Article from "./article.mdx";
 import Contents from "./contents.mdx";
 

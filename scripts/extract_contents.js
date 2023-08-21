@@ -20,6 +20,7 @@ let newContent = file
     if (!/^#{1,3}\s.*$/.test(line)) return '';
     console.log(line);
     let { id, level, short } = parseTitle(line)
+    if (level == 1) { id = ''; }
     level = Math.max(level - 1, 1); // remove nesting for h1
     return ' '.repeat(level * 2) + `- [${short}](#${id})`;
   })

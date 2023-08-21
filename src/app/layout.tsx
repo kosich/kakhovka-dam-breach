@@ -1,13 +1,12 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import Script from "next/script";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Kakhovka Dam Breach",
-  description: "Timeline of the Kakhovka Dam breach.",
+  description:
+    "What lead to Kakhovka Dam breach in June 2023? An article with a detailed timeline, " +
+    "investigating events at the Kakhovka Dam, during russian occupation in 2022-2023.",
 };
 
 declare global {
@@ -23,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body>
         {children}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-KZE0WCMGQV"

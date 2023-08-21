@@ -12,7 +12,6 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
     // Allows customizing built-in components, e.g. to add styling.
     a: Link,
-    h1: H(1),
     h2: H(2),
     h3: H(3),
     h4: H(4),
