@@ -4,9 +4,14 @@ import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Kakhovka Dam Breach",
-  description:
-    "What lead to Kakhovka Dam breach in June 2023? An article with a detailed timeline, " +
-    "investigating events at the Kakhovka Dam, during russian occupation in 2022-2023.",
+  description: [
+    "What led to Kakhovka Dam breach in June 2023? This article investigates and summarises ",
+    "circumstances preceding the ecological and humanitarian catastrophe in southern Ukraine, ",
+    "during russian occupation in 2022-2023. #StandWithUkraine",
+  ].join(""),
+  openGraph: {
+    images: "/kakhovka-dam-breach-og.jpeg",
+  },
 };
 
 declare global {
