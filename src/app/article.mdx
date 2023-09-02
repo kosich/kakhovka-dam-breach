@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { Subtle } from './shared/Subtle';
 
+<Image src={require('./assets/overview-photo.jpeg').default} alt="" placeholder="blur" />
 
 # Kakhovka Dam Breach
 
@@ -24,6 +25,7 @@ Currently widely accepted version of dam breach is that it was blown up. In this
 To understand what happened on June 6th, 2023 we need to understand how the dam works and what was happening at the dam before the tragedy.
 
 <figure>
+  <Subtle>← free right bank, embankment dam, barrage/gravity dam, HPP, Lock, occupied left bank →</Subtle>
   <Image src={require('./assets/image92-2237e55c.png').default} alt="" placeholder="blur" />
   <figcaption>
     <Subtle>
@@ -33,12 +35,13 @@ To understand what happened on June 6th, 2023 we need to understand how the dam 
   </figcaption>
 </figure>
 
-Water flows from heigher level (reservoir) to lower level. The energy water carries turns turbines at the Hydro Power Plant (HPP, on the right). If there's excess water — it is drained through sluice gates, that stand on a gravity dam (weir). Water drained though sluice gates still carries energy, which should be dissipated. Protective riverbed layer downstream from the dam helps slow down the water and protect sandy river floor from erosion.
+Water flows from heigher levels (reservoir) to lower levels. The energy water carries turns turbines at the Hydro Power Plant (HPP, on the right). If there's excess water — it is drained through sluice gates, that stand on a gravity dam (weir). Water drained though sluice gates still carries energy, which should be dissipated. Protective riverbed layer downstream from the dam helps slow down the water and protect sandy river floor from erosion.
 
 Now, since late 2016 and till russian occupation of the dam in Feb 2022, there was only one visible from satellites water drainage in Spring floods of 2018, which lasted for at most 18 days:
 
 <figure>
-  <Image src={require('./assets/image9-be498fab.gif').default} alt="" height="256" />
+  <Subtle>↖ right bank, barrage, HPP, Lock, left bank ↘</Subtle>
+  <Image src={require('./assets/image9-be498fab.gif').default} alt="" height="384" />
   <figcaption>
     <Subtle>
       Source: [https://sentinelshare.page.link/SzuZ](https://sentinelshare.page.link/SzuZ)
@@ -46,14 +49,14 @@ Now, since late 2016 and till russian occupation of the dam in Feb 2022, there w
   </figcaption>
 </figure>
 
-Gate opening happened when HPP turbines didn’t spend enough water during Spring floods. Opening of the sluice gates is not a rare thing, but doesn’t happen often either. In this case gate opening was done in phases, according to existing water load on Kakhovka reservoir. It was ratified by a specialized committee, and even got to the UkrHydroEnergo news: [gates opening in 2018](#gates-opening-in-2018). Note that the gates were opened in a symmetrical to each other and to the HPP layout. Meaning that right-bank and left-bank gates are opened symmetrically. First [2 + HPP](#10-04-2018-two-opened-hpp), then [2 + 2 + HPP](#11-04-2018-4-opened-hpp), then [4 + 2 + HPP](#14-april-2018-6-opened-hpp).
+Gate opening happened when HPP turbines didn’t spend enough water during Spring floods. Opening of the sluice gates is not a rare thing, but doesn’t happen often either. In this case gate opening was done in phases, according to existing water load from the Kakhovka reservoir. This decision was ratified by a specialized committee, and even got to the UkrHydroEnergo news: [gates opening in 2018](#gates-opening-in-2018). Note that the gates were opened in a symmetrical to each other and to the HPP layout. Meaning that right-bank and left-bank gates are opened symmetrically. First [2 + HPP](#10-04-2018-two-opened-hpp), then [2 + 2 + HPP](#11-04-2018-4-opened-hpp), then [4 + 2 + HPP](#14-april-2018-6-opened-hpp).
 
 Since russian occupation of the dam, there were two massive drainages through the gates:
 
 **First drainage** lasted at least 45 days in May-June 2022:
 
 <figure>
-  <Image src={require('./assets/image10-8fef9451.gif').default} alt="" height="256" />
+  <Image src={require('./assets/image10-8fef9451.gif').default} alt="" height="384" />
   <figcaption>
     <Subtle>
       Source: [https://sentinelshare.page.link/rxDu](https://sentinelshare.page.link/rxDu)
@@ -66,7 +69,7 @@ This drainage is done when what’s left of the original HPP crew is still allow
 **Second drainage** was a 8 months of almost continuous drainage from October till dam breach in June, last 7 months of which (235 days) is uninterrupted drainage through gates on just one side, near the HPP. On the same side, where the June 2023 breach will happen:
 
 <figure>
-  <Image src={require('./assets/image43-d3cb4383.gif').default} alt="" height="256" />
+  <Image src={require('./assets/image43-d3cb4383.gif').default} alt="" height="384" />
   <figcaption>
     <Subtle>
       Source: [https://sentinelshare.page.link/tt29](https://sentinelshare.page.link/tt29)
@@ -102,10 +105,10 @@ Constant drainage and big water level difference in Spring likely led to river b
 
 It is a ~5 meters thick concrete wall, break of which was either caused or led to protective riverbed layer damage.
 
-Signs of riverbed scour continue with [a collapse of the s-bridge early in June](#1-2-june-2-3-june-2023-overtopping-fall-of-the-s-bridge). From four to three days before the dam breach a road bridge near the HPP collapses, as seen on these satellite images:
+Signs of riverbed scour continue with [a collapse of the s-bridge early in June](#1-2-june-2-3-june-2023-overtopping-fall-of-the-s-bridge). From four to three days before the dam breach, the road bridge bend near the HPP collapses, as seen on these satellite images:
 
 <figure>
-  <Image src={require('./assets/image21-bf032b68.gif').default} alt="" height="256" />
+  <Image src={require('./assets/image21-bf032b68.gif').default} alt="" />
   <figcaption>
     <Subtle>
       Source: [https://twitter.com/i/status/1665974703935180801](https://twitter.com/i/status/1665974703935180801) 
@@ -124,9 +127,9 @@ River bed scouring actually already happened when the dam was under construction
   </figcaption>
 </figure>
 
-So we had riverbed scouring in the 1950's, in a similar situation, some 100+ meters downstream (disclaimer: I bet it got fixed then, I reference it only as a similar case). Then we have the separator wall collapse on [28 April 2023](#28-april-2023-part-of-the-wall-separating-hpp-dam-breaks), 38 days before the breach, some 100 meters downstream from the barrage. Then we have the bridge foundations collapse on [1-2 and 2-3 of June 2023](#1-2-june-2-3-june-2023-overtopping-fall-of-the-s-bridge), 4 and 3 days before the catastrophe, right at the base of the barrage.
+So we had riverbed scouring in the 1950's, in a similar situation, some 100+ meters downstream (disclaimer: I bet it got fixed then, I reference it only as a similar case). Then we have the separator wall collapse on [28 April 2023](#28-april-2023-part-of-the-wall-separating-hpp-dam-breaks), 38 days before the breach, some 100 meters downstream from the barrage. Then we have the bridge foundations collapse on [1-2 and 2-3 of June 2023](#1-2-june-2-3-june-2023-overtopping-fall-of-the-s-bridge), four to three days before the catastrophe, right at the base of the dam.
 
-Progressing upstream river bed scouring could undermine the basis of the barrage and the HPP structures. Which could cause them to collapse under their own weight and water pressure from the reservoir, leading to the dam breach on [6th of June, 2023](#6-june-2023-breach):
+Progressing upstream river bed scouring could undermine the basis of the weir and the HPP structures. Which could cause them to collapse under their own weight and water pressure from the reservoir, leading to the dam breach on [6th of June, 2023](#6-june-2023-breach):
 
 <figure>
   <Image src={require('./assets/image127-50409178.png').default} alt="" placeholder="blur" />
@@ -181,28 +184,6 @@ May I also remind you: aside from many suffering cities and villages, russia als
 **This is the end of the overview part.** The rest of the article covers general info about the dam, shares a detailed timeline of the events before the breach, and explores why the explosion version doesn’t have enough evidence currently.
 </Subtle>
 
-## Photos
-
-← right bank, embankment dam, barrage, HPP, Lock, left bank →
-
-<figure>
-  <Image src={require('./assets/image138-d7a5fdfc.png').default} alt="" placeholder="blur" />
-  <figcaption>
-    <Subtle>
-      Source: [https://en.defence-ua.com/media/illustration/articles/82063286aa051fa9.jpg](https://en.defence-ua.com/media/illustration/articles/82063286aa051fa9.jpg)
-    </Subtle>
-  </figcaption>
-</figure>
-
-<figure>
-  <Image src={require('./assets/image122-cf70cfd6.png').default} alt="" placeholder="blur" />
-  <figcaption>
-    <Subtle>
-      Source: [https://www.google.com/maps/@46.7782633,33.3735299,4109a,35y,56.5h/data=!3m1!1e3?entry=ttu](https://www.google.com/maps/@46.7782633,33.3735299,4109a,35y,56.5h/data=!3m1!1e3?entry=ttu) 
-    </Subtle>
-  </figcaption>
-</figure>
-
 ## Blueprints
 
 <figure>
@@ -241,7 +222,7 @@ May I also remind you: aside from many suffering cities and villages, russia als
 
 ## Timeline
 
-Disclaimer on the date-time stamps: while satellite timestamps can be trusted, news and individual uploads exact date-time is often hard to verify. Most of the dates here should be read as “not later than”.
+<Subtle>**Disclaimer on the date-time stamps:** while satellite timestamps can be trusted, news and individual uploads exact date-time is often hard to verify. Such dates here should be read as “not later than”.</Subtle>
 
 ### Feb-Jul 2022
 
@@ -437,9 +418,9 @@ Notes:
 #### 01 October 2022 — unverified: possibly leaking sluice gate n.1
 
 <figure>
-  <Image src={require('./assets/image135-a5d4ab67.jpg').default} alt="" placeholder="blur" />
+  {/* <Image src={require('./assets/image135-a5d4ab67.jpg').default} alt="" placeholder="blur" /> */}
 
-  <Image src={require('./assets/image19-7e35209f.gif').default} alt="" />
+  <Image src={require('./assets/image19-7e35209f.gif').default} alt="" height="384" />
   <figcaption>
     <Subtle>Source: [https://sentinelshare.page.link/23Zc](https://sentinelshare.page.link/23Zc) Sentinel</Subtle>
   </figcaption>
@@ -1577,6 +1558,30 @@ For reference under the lock bridge photo, from before the occupation times:
 
 ### Reference photos
 
+#### Birdview of the dam
+
+<figure>
+  This photo is used in the article header.
+
+  <Image src={require('./assets/image138-d7a5fdfc.jpeg').default} alt="" placeholder="blur" />
+  <figcaption>
+    <Subtle>
+      Source: [https://en.defence-ua.com/media/illustration/articles/82063286aa051fa9.jpg](https://en.defence-ua.com/media/illustration/articles/82063286aa051fa9.jpg)
+    </Subtle>
+  </figcaption>
+</figure>
+
+#### Google Maps view
+
+<figure>
+  <Image src={require('./assets/image122-cf70cfd6.png').default} alt="" placeholder="blur" />
+  <figcaption>
+    <Subtle>
+      Source: [https://www.google.com/maps/@46.7782633,33.3735299,4109a,35y,56.5h/data=!3m1!1e3?entry=ttu](https://www.google.com/maps/@46.7782633,33.3735299,4109a,35y,56.5h/data=!3m1!1e3?entry=ttu) 
+    </Subtle>
+  </figcaption>
+</figure>
+
 #### 2020-06-05 .. 2023-06-28 Gif
 
 Sentinel Hub satellite images for three years before the breach
@@ -1632,7 +1637,6 @@ Draining water, opened-closed-opened pattern, symmetrical opened gates layout
     </Subtle>
   </figcaption>
 </figure>
-
 
 Note:
 
@@ -1739,12 +1743,11 @@ List of russians, who were based on the dam:
 <figure>
   <Image src={require('./assets/image46-0beab66f.png').default} alt="" placeholder="blur" />
   <figcaption>
-    <Subtle>Source: [https://t.me/supernova\_plus/9109](https://t.me/supernova_plus/9109)</Subtle>
+    <Subtle>Source: [https://t.me/supernova\_plus/9109](https://t.me/supernova_plus/9109)</Subtle>    
+    <Subtle>Source: [https://t.me/Separ13\_13/3190](https://t.me/Separ13_13/3190) (ru propaganda)</Subtle>
   </figcaption>
 </figure>
 
-
-Source: [https://t.me/Separ13\_13/3190](https://t.me/Separ13_13/3190) (ru propaganda)
 
 #### Position on the bottom of the river — unconfirmed
 
