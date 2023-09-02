@@ -2,15 +2,25 @@ import "./globals.css";
 import type { Metadata } from "next";
 import Script from "next/script";
 
-export const metadata: Metadata = {
-  title: "Kakhovka Dam Breach",
-  description: [
+const title = "Kakhovka Dam Breach";
+const description = [
     "What led to the Kakhovka Dam breach in June 2023? This article investigates and ",
     "summarises circumstances preceding the ecological and humanitarian catastrophe ",
     "in southern Ukraine, during russian occupation in 2022-2023. #StandWithUkraine",
-  ].join(""),
+  ].join("");
+
+const images = "https://kakhovka-dam-breach.kospalchyk.me/kakhovka-dam-breach-og.jpeg";
+
+export const metadata: Metadata = {
+  title,
+  description,
   openGraph: {
-    images: "/kakhovka-dam-breach-og.jpeg",
+    type: "article",
+    images,
+  },
+  twitter: {
+    card: "summary_large_image",
+    images,
   },
 };
 
